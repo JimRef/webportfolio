@@ -6,11 +6,15 @@
 		<title>Jimmy | Full-Stack Developer</title>
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-		<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<!-- Navbar Section Start -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-image">
 		  <a class="navbar-brand" href="#profile">Jimmy</a>
 		  <!-- Hamburger Icon -->
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,16 +26,16 @@
 		        <a class="nav-link" href="#profile">Home<span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#profile">About</a>
+		        <a class="nav-link" href="#aboutme">About</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#projects">Projects</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Tools</a>
+		        <a class="nav-link" href="#tools">Tools</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Contact</a>
+		        <a class="nav-link" href="#contact">Contact</a>
 		      </li>
 		    </ul>
 		  </div>
@@ -39,109 +43,168 @@
 		<!-- End navbar -->
 
 		<!-- main content -->
-		<main  class="container-fluid text-center">
-			<section class="row">
-				<div class="col-12 p-0">
+		<main  class=" p-5 bg-image container-fluid text-center">
+			
+				<div class="col-12">
 					<!-- profile -->
-					<div id="profile" class="container-fluid vh-50 bg-dark text-light">
-						<h1>Welcome.</h1>					
-						<div class="row mt-5">
-							<div class="offset-md-2 col-md-8">
-								<img src="images/dp.svg" width="250">
-								<p>
-									Hi, I am Jimmy Refugio a MERN stack developer building a fully functional website for your business.
-								</p>
-							</div>
+					<div id="profile" class="text-light">
+											
+						<div class="row justify-content-center align-items-center mt-5">
+							<div data-aos="fade-right" data-aos-offset="500"
+     data-aos-easing="ease-in-sine" class="col-10 col-md-3 p-3 py-lg-5">
+								<img src="images/dp.svg" width="250" class="img-fluid">
+							</div>	
+								<div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine" class="col-md-7 col-lg-5 pl-md-5 py-lg-5">
+									<h1 class="my-3 text-center text-md-left">Welcome!</h1>
+									<p class="text-justify">
+										Hi, I am Jimmy Refugio a MERN stack developer building a fully functional website for your business.
+									</p>
+								</div>
+							
 						</div>
 						<!-- end of profile -->
-
 					</div>
-					
+
+
 						<!-- my projects -->
 					
-					<div id="projects" class="p-5 text-dark">
-						<h2 class="mb-3">My Projects</h2>
-						<div class="row d-flex justify-content-center">
-						<div class="card bg-light mx-3" style="width: 18rem;">
-						  <img src="images/cons.png" class="card-img-top p-3 img-fluid" alt="...">
-						  <div class="card-body">
-						  	<h5>Consulting Firm Website</h5>
-						    <p class="card-text">What is consulting firm? A consulting firm is a business comprised of industry-specific experts who offer professional advice, guidance, and actionable solutions to businesses experiencing issues they can’t deal with in-house..</p>
-						  </div>
-						</div>
+					<div data-aos="zoom-in" id="projects" class="text-dark mt-5 mb-3">
+						<h2 class="mb-3 text-light">My Projects</h2>
+						<div class="row d-flex justify-content-center mb-3 mt-5">
+							<div class="card bg-light m-3" style="width: 18rem;">
+							  <img src="images/cons.png" class="card-img-top p-3 img-fluid" alt="...">
+							  <div class="card-body">
+							  	<h5>Consulting Firm Website</h5>
+							    <p class="card-text">What is consulting firm? A consulting firm is a business comprised of industry-specific experts who offer professional advice, guidance, and actionable solutions to businesses experiencing issues they can’t deal with in-house..</p>
+							  </div>
+							</div>
 
-						<div class="card bg-light mx-3" style="width: 18rem;">
-						  <img src="images/eco.png" class="card-img-top p-3 img-fluid" alt="...">
-						  <div class="card-body">
-						  	<h5>Ecommerce Website</h5>
-						    <p class="card-text">What is ecommerce in simple words? Ecommerce or electronic commerce is the trading of goods and services on the internet. It is your bustling city center or brick-and-mortar shop translated into zeroes and ones on the internet superhighway.</p>
-						  </div>
-						</div>
+							<div class="card bg-light m-3" style="width: 18rem;">
+							  <img src="images/eco.png" class="card-img-top p-3 img-fluid" alt="...">
+							  <div class="card-body">
+							  	<h5>Ecommerce Website</h5>
+							    <p class="card-text">What is ecommerce in simple words? Ecommerce or electronic commerce is the trading of goods and services on the internet. It is your bustling city center or brick-and-mortar shop translated into zeroes and ones on the internet superhighway.</p>
+							  </div>
+							</div>
 
-						<div class="card bg-light mx-3" style="width: 18rem;">
-						  <img src="images/web3.jpg" class="card-img-top p-3 img-fluid" alt="...">
-						  <div class="card-body">
-						  	<h5>Web3 Website</h5>
-						    <p class="card-text">What is Web3? Web3 is an idea for a new iteration of the World Wide Web which incorporates concepts such as decentralization, blockchain technologies, and token-based economics.</p>
-						  </div>
-						</div>
+							<div class="card bg-light m-3" style="width: 18rem;">
+							  <img src="images/web3.jpg" class="card-img-top p-3 img-fluid" alt="...">
+							  <div class="card-body">
+							  	<h5>Web3 Website</h5>
+							    <p class="card-text">What is Web3? Web3 is an idea for a new iteration of the World Wide Web which incorporates concepts such as decentralization, blockchain technologies, and token-based economics.</p>
+							  </div>
+							</div>
 						</div>
 					</div>	
 						<!-- end of my projects -->
+
+					<div data-aos="fade-right" id="aboutme" class="text-light">
+						<div>
+							<h2>About me</h2>
+							<p>I'm Jimmy, a MERN Stack Developer from Manila, Philippines. I have a passion in technology and website development.</p>
+						</div>
+					</div>	
+
 						<!-- tools -->
-					<div>
-						<h2>Tools</h2>
-						<div>
-							<h3>Front End</h3>
-							<div>
-								<img src="images/logo-html5.png">
-								<img src="images/logo-css3.png">
-								<img src="images/logo-bootstrap.png">
-								<img src="images/logo-javascript.png">		
+					<div class="row flex-column mt-5">
+						<h2 class="text-light">Tools</h2>
+							<div id="tools" class="row justify-content-center p-5">
+											
+									<div class="col-md-3 mx-4 my-3">
+										<h3 class="text-light text-center">Front End</h3>
+										<div class="row justify-content-center">
+											<div class="col-6">
+												<img src="images/logo-html5.png" class="img-fluid">
+											</div>
+											<div class="col-6">	
+												<img src="images/logo-css3.png" class="img-fluid">
+											</div>
+											<div class="col-6">
+												<img src="images/logo-bootstrap.png" class="img-fluid">
+											</div>
+											<div class="col-6">
+												<img src="images/logo-javascript.png" class="img-fluid">
+											</div>
+										</div>		
+									</div>
+								
+								<div class="col-md-3 mx-4 my-3">
+									<h3 class="text-light text-center">MERN</h3>
+									<div class="row">
+									<div class="col-6">
+									<img src="images/logo-mongodb.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+									<img src="images/logo-expressjs.png" class="img-fluid" >
+									</div>
+									<div class="col-6">
+									<img src="images/logo-react.png" class="img-fluid" >
+									</div>
+									<div class="col-6">
+									<img src="images/logo-nodejs.png" class="img-fluid" >	
+									</div>
+									</div>
+								</div>
+								
+								<div class="col-md-3 mx-4 my-3">
+									<h3 class="text-light text-center">Other Tools</h3>
+									<div class="row">
+									<div class="col-6">
+									<img src="images/logo-heroku.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+									<img src="images/logo-git.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+									<img src="images/logo-postman.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+									<img src="images/logo-sublime-text-3.png" class="img-fluid">
+									</div>
+									</div>
+								</div>
 							</div>
-							<h3>MERN</h3>
-							<div>
-								<img src="images/logo-mongodb.png">
-								<img src="images/logo-expressjs.png">
-								<img src="images/logo-react.png">
-								<img src="images/logo-nodejs.png">		
-							</div>
-							<h3>Other Tools</h3>
-							<div>
-								<img src="images/logo-heroku.png">
-								<img src="images/logo-git.png">
-								<img src="images/logo-postman.png">
-								<img src="images/logo-sublime-text-3.png">
-							</div>
-						</div>
-					</div>
+					    </div>
+					</div> 
 					<!-- end of tools -->
+
 					<!-- Contact Form  Start -->
-					
-					<div class="bg-dark min-vh-100 p-5">
-						<h2 class="text-light">Contact Us</h2>
-						<div>
-							<a href="https://www.facebook.com" target="_blank"><img src="images/fb.png"></a>
-							<img src="">
-							<img src="">
-							<img src="">
+					<div class="row d-flex justify-content-center align-items-center flex-column p-3">
+						<h2 class="text-light flex-column">Contact Us</h2>
+							<div>
+							<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" class="p-2"></a>
+							<a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" class="p-2"></a>
+							<a href="https://www.gitlab.com" target="_blank"><img src="images/gitlab.png" class="p-2"></a>
+							<a href="https://www.github.com" target="_blank"><img src="images/github.png" class="p-2"></a>
+						    </div>
+					</div>
+
+					<div id="contact" class="row d-flex  justify-content-center align-items-center p-3">
+											
+						<div class="col-md-6 mb-2">
+							<h2 class="text-light">Visit Us</h2>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.479088367193!2d121.01118931535169!3d14.571755181688273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9a252c6a315%3A0x4f8212fe5eb6fed9!2sCristar%20Market!5e0!3m2!1sen!2sph!4v1673947995453!5m2!1sen!2sph"
+							frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="250" height="250"></iframe>
 						</div>
-						<div class="row mt-5">
-							<form class="col-12 offset-md-2 col-md-8 offset-xl-4 col-xl-4 bg-primary p-3 rounded">
+						
+
+						<div class="col-md-6 mt-2">
+							<h2 class="text-light">Message Us</h2>
+							<form class="">
 
 							  <div class="form-group">
 							    <label class="text-light" for="full_name">Full Name</label>
-							    <input type="email" class="form-control" id="full_name" placeholder="Your Name">
+							    <input type="email" class="form-control" id="full_name" required>
 							  </div>
 
 							  <div class="form-group">
 							    <label class="text-light" for="email">Email address</label>
-							    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+							    <input type="email" class="form-control" id="email" required>
 							  </div>
 
 							  <div class="form-group">
 							    <label class="text-light" for="contact">Contact Number</label>
-							    <input type="text" class="form-control" id="contact" placeholder="+63 123 456 789">
+							    <input type="text" class="form-control" id="contact" required>
 							  </div>
 
 							  <div class="form-group">
@@ -155,7 +218,7 @@
 
 							  <div class="form-group">
 							    <label class="text-light" for="message">Message</label>
-							    <textarea class="form-control" id="message" rows="7"></textarea>
+							    <textarea class="form-control" id="message" rows="7" required></textarea>
 							  </div>
 							  <button type="button" class="btn btn-dark"data-toggle="modal" data-target="#exampleModal">Send Email</button>
 							</form>
@@ -163,17 +226,45 @@
 					</div>
 					<!-- Contact Form  End -->
 
+					<!-- Modal start -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        Message Successfully Sent!
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- End of modal -->
 					
 				</div>
-			</section>
+			
 		</main>
 		<!-- end of main -->
-
+		<footer class="mt-5 p-3 bg-image text-light">
+			<h6 class="text-center">Jimmy Refugio</h6>
+			<p class="text-center mb-1">Full-Stack Developer</p>
+			<p class="text-center">© All Rights Reserved 2023</p>
+		</footer>
 
 
 
 		<!-- Bootstrap script -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        	AOS.init();
+    	</script>
 	</body>
 </html>
